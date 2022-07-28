@@ -12,7 +12,7 @@ uninstall:
 
 test:
 	@coverage run -m pytest tests/*.py
-    @coverage report -m --omit=$(VIRTUAL_ENV)/lib/python*
+	@coverage report -m --omit=$(VIRTUAL_ENV)/lib/python*
 
 clean:
 	@rm -f */version.txt
